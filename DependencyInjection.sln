@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "Depe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDependencyInjection", "CustomDependencyInjection\CustomDependencyInjection.csproj", "{08F0C36C-D76E-45A1-803A-1D13249D9208}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIFramework", "DIFramework\DIFramework.csproj", "{6C5C9B15-21F5-4956-8562-3FF6FEC4EC56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{08F0C36C-D76E-45A1-803A-1D13249D9208}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08F0C36C-D76E-45A1-803A-1D13249D9208}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08F0C36C-D76E-45A1-803A-1D13249D9208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C5C9B15-21F5-4956-8562-3FF6FEC4EC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C5C9B15-21F5-4956-8562-3FF6FEC4EC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C5C9B15-21F5-4956-8562-3FF6FEC4EC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C5C9B15-21F5-4956-8562-3FF6FEC4EC56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
