@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using CustomDependencyInjection;
+using DependencyInjection.Contracts;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 
 namespace DependencyInjection
@@ -7,11 +9,24 @@ namespace DependencyInjection
     {
         static void Main(string[] args)
         {
-            IServiceProvider serviceProvider = new DIConfigurator().Configure();
+            DICustomConfig customConfig = new DICustomConfig();
+            Injector injector = new Injector();
+            injector.ServiceModule = customConfig;
+            // var logger = injector.Create<SpecialLogger>();
 
-            Engine engine = serviceProvider.GetRequiredService<Engine>();
+            Engine engine = injector.Create<Engine>();
 
+            //logger.Log("Hi");
             engine.Start();
+            Console.WriteLine();
+
+
+            //return;
+            //IServiceProvider serviceProvider = new DIConfigurator().Configure();
+
+            //Engine engine = serviceProvider.GetRequiredService<Engine>();
+
+            //engine.Start();
         }
     }
 }
